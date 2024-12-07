@@ -1,0 +1,175 @@
+/* General Page Styling */
+.aboutus-page {
+  background-image: url("../assets/bg.jpg"); /* Replace with your background image path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Makes the image fixed during scroll */
+  padding: 50px 0;
+}
+
+/* About Container */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto 50px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Reverse Class for Layout */
+.about-container.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Text Section */
+.about-text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #0a265f; /* Dark blue heading */
+}
+
+.about-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Image Section */
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Founder and Achievements Section */
+.founder-achievements-container {
+  max-width: 1200px;
+  margin: 0 auto 50px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.founder-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.founder-container .about-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.founder-container .about-text {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.achievements-section {
+  text-align: center;
+}
+
+.achievements-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #0a265f;
+}
+
+.achievements-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.achievements-grid img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 2px solid #0a265f;
+}
+
+/* Company Logos Section */
+.company-logos {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.company-logos img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-container.reverse {
+    flex-direction: column;
+  }
+
+  .about-text {
+    margin-right: 0;
+  }
+
+  .about-image img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .company-logos {
+    flex-direction: column;
+  }
+
+  .company-logos img {
+    margin-bottom: 15px;
+  }
+
+  /* Founder Section */
+  .founder-container {
+    flex-direction: column;
+  }
+
+  .founder-container .about-image {
+    margin-bottom: 20px;
+  }
+
+  .founder-container .about-text {
+    margin-left: 0;
+  }
+}
